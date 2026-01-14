@@ -8,7 +8,7 @@ phases:
       - echo "Copying DAG files to S3..."
       - aws s3 cp --recursive ./dags s3://weather-airflow-managed-gds/dags/
       - echo "Copying requirements.txt files to S3..."
-      - aws s3 cp ./requirements.txt s3://airflow-managed-gds/
+      - aws s3 cp ./requirements.txt s3://weather-airflow-managed-gds/
       - echo "Copying Glue scripts to S3..."
       - aws s3 cp --recursive ./scripts s3://aws-glue-assets-767397682530-us-east-1/scripts/
   post_build:
