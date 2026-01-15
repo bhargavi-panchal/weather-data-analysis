@@ -11,7 +11,7 @@ default_args = {
     'retry_delay': timedelta(minutes=5),
 }
 
-dag = DAG('transform_redshift_dag', default_args=default_args, schedule_interval="@once",catchup=False)
+dag = DAG('transform_redshift_dag', default_args=default_args, schedule="@once",catchup=False)
 
 
 # Define the Glue Job
