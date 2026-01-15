@@ -1,6 +1,6 @@
 from airflow import DAG
 from airflow.providers.amazon.aws.operators.glue import GlueJobOperator
-from airflow.sensors.external_task_sensor import ExternalTaskSensor
+from airflow.sensors.external_task  import ExternalTaskSensor
 from datetime import datetime, timedelta
 
 default_args = {
